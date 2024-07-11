@@ -135,65 +135,83 @@ nav {
   }
 }
 .sec4 {
-  min-height: 100vh;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 40px;
-  background-color: var(--skin);
-  .top {
+  .hero4 {
+    height: 110vh;
     width: 100%;
-    box-sizing: border-box;
-    height: 10%;
     display: flex;
-    font-size: 1.5rem;
-    padding-bottom: 0.5em;
-    align-items: center;
-    justify-content: space-between;
-
-    div {
+    flex-direction: column;
+    padding: 20px;
+    background-color: #faf8f3;
+    .container3 {
+      padding: 15px;
+      padding-right: 35px;
       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      p {
+        font-size: 25px;
+      }
       img {
-        height: 3vh;
-        align-items: center;
-        justify-content: center;
-        padding-right: 10px;
+        height: 20px;
+      }
+      a {
+        color: #010101;
+        font-size: 25px;
+        text-decoration: none;
       }
     }
-  }
-
-  .bottom {
-    width: 100%;
-    height: 100vh;
-    background-color: red;
-
-    > .work {
-      width: 33%;
-      height: 85vh;
-      position: relative;
-      background-color: aqua;
-
-      > video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-
-      > img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        
-      }
-    }
-    .work:hover img{
-        opacity: 0;
-    }
+    .container4 {
+      display: flex;
+      align-items: center;
+      padding-right: 25px;
+      justify-content: space-between;
+      .work {
+        width: 33%;
+        height: 75vh;
+        background-color: #010101;
+        position: relative;
+        > video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
   
+        > img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+  
+  
+      .overlay{
+          width: 100%;
+          height: 100%;
+          background-color: #01010113;
+          position: absolute;
+          top: 0;
+          left: 0;
+  
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          
+  
+          >p{
+              color: white;
+              padding-bottom: 10vh;
+          }
+      }
+      .work:hover >img, .work:hover >.overlay{
+          opacity: 0;
+  
+      }
+    }
   }
-
 
 }
 
